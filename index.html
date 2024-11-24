@@ -5,9 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LookAround</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 <body>
-    <div class="logo"><img src="Look.jpg" alt="Added image"></div>
+    <div class="logo"><img src="assets/Look.jpg" alt="Added image"></div>
+    <div id="loading">
+        <div class="spinner"></div>
+    </div>
+    <div class="LookAround">
+        <h1>Look<span class="auto-type"></span></h1>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        window.onload = function() {
+            var typed = new Typed(".auto-type",{
+                strings: ["Out", "Friends", "Around"],
+                typeSpeed: 150,
+                backSpeed: 150,
+                loop: true
+            });
+        }
+    </script>
 </body>
 </html>
