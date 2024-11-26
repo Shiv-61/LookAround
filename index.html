@@ -8,6 +8,7 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 <body>
+    <div id="content">
     <div class="logo"><img src="assets/Look.jpg" alt="Added image"></div>
     <div id="loading">
         <div class="spinner"></div>
@@ -16,14 +17,14 @@
         <h1>Look<span class="auto-type"></span></h1>
     </div>
 
-    <div class="enteringSite">
+         <div class="enteringSite">
             <button class="login" onclick="window.location.href='Login.html'">Login</button>
             <button class="signUp" onclick="window.location.href='SignUp.html'">SignUp</button>
-    </div>
-
-    <script src="script.js"></script>
-    <script>
-        window.onload = function() {
+        </div>
+        
+        <script src="script.js"></script>
+        <script>
+            window.onload = function() {
             var typed = new Typed(".auto-type",{
                 strings: ["Out", "Friends", "Around"],
                 typeSpeed: 150,
@@ -31,6 +32,12 @@
                 loop: true
             });
         }
-    </script>
+        </script>
+        </div>
+        <div class="left">
+            <div class="description">
+                
+            </div>
+        </div>
 </body>
 </html>
