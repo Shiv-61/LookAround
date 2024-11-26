@@ -1,6 +1,7 @@
-body, html {
+ body, html {
     margin: 0;
     height: 100%; 
+    background: linear-gradient(to bottom right, #6a11cb, #2575fc);
 }
 
 .logo {
@@ -13,7 +14,19 @@ body, html {
 .logo img {
     width: 200px;
     height: 200px;
-    border-radius: 49px;
+    border-radius: 50px;
+    animation: fadeInUp 2s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 #loading {
@@ -65,17 +78,17 @@ body, html {
 }
 .LookAround h1 {
     font-family: 'Arial', sans-serif;
-    font-weight: 1000;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-350px);
-    font-size: 5vw;
-    color: #0066ff;
+    font-size: 4vw;
+    font-weight: bold;
+    color: white;
 }
 
 .LookAround h1 span {
-    color: #0066ff;
+    color: #f4c724;
 }
 
 .enteringSite{
@@ -87,41 +100,46 @@ body, html {
     align-items:center;
 }
 
+
 .login{
     height: 50px;
-    width: 120px;
-    background-color: #0066ff;
-    color: white;
-    border-radius: 7px;
-    border-color: #0066ff;
-    transition: all 0.1s ease-in;
+    width: 140px;
+    background-color: #29e3f0;
+    color: #001f4d;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .login:hover{
     height: 50px;
-    width: 135px;
-    background-color:  #2262c2;
-    color: white;
-    border-radius: 7px;
-    border-color:  #2262c2;
-    transform: scale(1.1);    
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8); 
+    width: 155px;
+    background-color: #e3b71d; /* Darker Yellow-Orange */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
 }
 .signUp{
     height: 50px;
-    width: 120px;
-    background-color: #0066ff;
-    color: white;
-    border-radius: 7px;
-    border-color: #0066ff;
-    transition: all 0.1s ease-in;
+    width: 140px;
+    background-color: #29e3f0; /* Bright Cyan */
+    color: #001f4d; /* Deep Navy Blue */
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .signUp:hover{
     height: 50px;
-    width: 135px;
-    background-color: #2262c2;
-    color: white;
-    border-radius: 7px;
-    border-color:  #2262c2;
-    transform: scale(1.1);    
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8); 
-}
+    width: 155px;
+    background-color: #25c7d3; /* Darker Cyan */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+} 
