@@ -1,5 +1,6 @@
 body, html {
     margin: 0; 
+    height: max-content;
     background: linear-gradient(to bottom right, #2575fc, #6a11cb),
                 linear-gradient(to top left,#2575fc, #00FFFF);
     animation: gradientMove 0.1ms cubic-bezier(0.075, 0.82, 0.165, 1) infinite; 
@@ -29,7 +30,7 @@ body, html {
     width: 150px; 
     height: 150px;
     border-radius: 48px;
-    transform: translateY(-120%);
+    transform: translateY(-110%);
     animation: popup 4s ease;
 }
 @keyframes popup {
@@ -42,7 +43,7 @@ body, html {
         opacity: 1;
     }
     100% {
-        transform: translateY(-120%) scale(1);
+        transform: translateY(-110%) scale(1);
         opacity: 1;
     }
 }
@@ -128,14 +129,17 @@ body, html {
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transform: translateY(-90%);
+    transform: translateY(-100px);
 }
 
 .login:hover, .signUp:hover {
-    width: 125px;
+    width: 130px;
     background-color: #25c7d3;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-    transform: translateY(-2px);
+    border-color: #252525;
+    border-style: solid;
+    border-width: 3px;
+    color: white;
+    box-shadow: 0 0px 12px rgba(0, 0, 0, 2);
 }
 
 @media (max-width: 540px) {
